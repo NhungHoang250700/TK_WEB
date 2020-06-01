@@ -1,52 +1,83 @@
 <!DOCTYPE html>
-<htmL>
-
+<html>
 <head>
 <meta charset="utf-8">
-<title>Contest Entry From</title>
-<style type="text/css">
-ul{
-list-style-type:none;}
+<title>Contest Entry Form</title>
+<style>
+ul{list-style-type:none;}
 </style>
 </head>
-
 <body>
-
 <h1>“Pimp My Shoes” Contest Entry Form</h1>
-<p>Want to trade in your old sneakers for a custom pair of Forcefields? Make a case for why your shoes have <em>got</em> to go and you may be one often lucky winners.</p>
-
-<form action="www.learningwebdesign.com/4e/materials" accept-charset="utf-8">
-
+<p>Want to trade in your old sneakers for a custom pair of Forcefields? Make a case for why your shoes have got to go and you may be one of ten lucky winners.
+</p>
+<form action="www.learningwebdesign.com/4e/materials" method="post">
 <p>Contest Entry Information</p>
-<ul >
-<li>Name: <input type="text"></li>
-<li>Email: <input type="text"></li>
-<li>Phone: <input type="text"></li>
-<li>My shoes are SO old...<br><textarea placeholder="No more than 300 characters long" cols="50" rows="5"></textarea></br></li>
+<ul>
+<li>
+<label for="name">Name:</label>
+<input name="username" id="name" type="text"><br>
+</li>
+<li>
+<label for="email">Email Address:</label>
+<input name="email address" id="email" type="text">
+</li>
+<li>
+<label for="phone">Telephone Number:</label>
+<input name="telephone" id="phone" type="text">
+</li>
+<li>
+<label for="shoes">My shoes are SO old...</label><br/>
+<textarea name="other" id="shoes" cols="60" rows="4" placeholder="No more than 300 characters long"></textarea>
+</li>
 </ul>
 <p><input type="submit" value="Pimp my shoes!"> <input type="submit"value="Reset"></p>
-<p>Design your custom Forcefields:</p>
 
+
+<h2>Design your custom Forcefields:</h2>
 <p>Custom Shoe Design</p>
-<p>Color <em>(choose one)</em>:</p>
-<ul >
-<li><input type="radio">Red</li>
-<li><input type="radio">Blue</li>
-<li><input type="radio">Black</li>
-<li><input type="radio">Silver</li>
-</ul>
-
-<p>Features <em>(Choose as many as you want)</em></p>
+<legend>Color <i>(choose one)</i>:</legend>
 <ul>
-<li><input type="checkbox">Sparkley laces</li>
-<li><input type="checkbox">Metallic logo</li>
-<li><input type="checkbox">Light-up heels</li>
-<li><input type="checkbox">MP3-enabled</li>
+<li>
+<label><input name="color" type="radio" value="Red">Red</label>
+</li>
+<li>
+<label><input name="color" type="radio" value="Blue">Blue</label>
+
+</li>
+<li>
+<label><input name="color" type="radio" value="Black">Black</label>
+
+</li>
+<li>
+<label><input name="color" type="radio" value="Silver">Silver</label>
+
+</li>
+
+</ul>
+<p>Features <i>(Choose as many as you want)</i></p>
+<ul>
+<li>
+<label><input name="features" type="checkbox" value="Sparkley laces">Sparkley laces</label>
+</li>
+<li>
+<label><input name="features" type="checkbox" value="Metallic logo
+">Metallic logo</label>
+</li>
+<li>
+<label><input name="features" type="checkbox" value="Light-up heels
+">Light-up heels</label>
+</li>
+<li>
+<label><input name="features" type="checkbox" value="MP3-enabled
+">MP3-enabled</label>
+</li>
 </ul>
 
 <p>Size</p>
-<p>Sizes reflect standard men's sizes: 
-<select name="size">
+<p>Sizes reflect standard men's sizes:
+
+<select name="size" size="1">
 <option>5</option>
 <option>6</option>
 <option>7</option>
@@ -58,6 +89,6 @@ list-style-type:none;}
 <option>13</option>
 </select>
 </p>
+</form>
 </body>
-
 </html>

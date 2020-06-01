@@ -11,17 +11,28 @@
 <h1>“Pimp My Shoes” Contest Entry Form</h1>
 <p>Want to trade in your old sneakers for a custom pair of Forcefields? Make a case for why your shoes have <em>got</em> to go and you may be one often lucky winners.</p>
 
-<form action="www.learningwebdesign.com/4e/materials" accept-charset="utf-8">
-
+<form action="www.learningwebdesign.com/4e/materials" method="post">
 <p>Contest Entry Information</p>
 <ul>
-<li>Name: <input type="text"></li>
-<li>Email: <input type="text"></li>
-<li>Phone: <input type="text"></li>
-<li>My shoes are SO old...<br><textarea placeholder="No more than 300 characters long" cols="50" rows="5"></textarea></br></li>
+<li>
+<label for="name">Name:</label>
+<input name="username" id="name" type="text"><br>
+</li>
+<li>
+<label for="email">Email Address:</label>
+<input name="email address" id="email" type="text">
+</li>
+<li>
+<label for="phone">Telephone Number:</label>
+<input name="telephone" id="phone" type="text">
+</li>
+<li>
+<label for="shoes">My shoes are SO old...</label><br/>
+<textarea name="other" id="shoes" cols="60" rows="4" placeholder="No more than 300 characters long"></textarea>
+</li>
 </ul>
 <p><input type="submit" value="Pimp my shoes!"> <input type="submit"value="Reset"></p>
-<p>Design your custom Forcefields:</p>
+<h2>Design your custom Forcefields:</h2>
 <p>Custom Shoe Design</p>
 <p>Color <em>(choose one)</em>:</p>
 <ul>
